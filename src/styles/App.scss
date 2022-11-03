@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .app__whitebg {
+    @apply bg-white;
+  }
+
+  .app__primarybg {
+    @apply bg-primary;
+  }
+
+  .app__secondarybg {
+    @apply bg-secondary;
+  }
+
+  .app__container {
+    @apply max-w-full m-0 large:max-w-[120rem] large:mx-auto;
+  }
+
+  .app__flex {
+    @apply flex justify-center items-center;
+  }
+
+  .app__wrapper {
+    @apply flex-1 w-full flex-col py-2 px-4 large:pt-32;
+  }
+
+  .head-text {
+    @apply text-2xl md:text-5xl font-normal md:leading-[72px] large:text-[4rem];
+  }
+
+  .p-text {
+    @apply font-semibold text-base leading-[19px] large:text-xl text-[#D9D9D9];
+  }
+
+  .light-text {
+    @apply font-normal text-base md:text-xl md:leading-8 text-[#777777];
+  }
+
+  .bold-text {
+    @apply font-bold text-base md:text-xl md:leading-9;
+  }
+
+  .heading {
+    @apply font-normal text-lg md:text-2xl md:leading-[36px] text-black;
+  }
+
+  .heading-2 {
+    @apply font-normal text-2xl md:text-4xl md:leading-[56px] text-black;
+  }
+}

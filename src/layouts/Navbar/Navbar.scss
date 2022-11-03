@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .app__navbar {
+    @apply bg-black gap-[10px] h-[97px] w-full;
+
+    .app__profile {
+      @apply flex items-center justify-center bg-[#0F0F0F] p-4 w-full md:w-[295px] h-full space-x-[21px];
+    }
+
+    .app__navigation {
+      @apply flex items-center justify-center;
+
+      .app__navigation-navs {
+        @apply flex items-center justify-center;
+
+        .app__navigation-navs-left {
+          @apply bg-[#0F0F0F];
+        }
+
+        .app__navigation-navs-right {
+          @apply bg-[#0F0F0F];
+        }
+      }
+    }
+  }
+}
