@@ -3,4 +3,11 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
+  .app__header {
+    @apply mb-5 w-full mt-24 md:mt-[initial];
+
+    img {
+      @apply rounded w-full h-[100px] md:h-[150px];
+    }
+  }
 }

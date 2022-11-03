@@ -3,4 +3,43 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
+  .app__section {
+    @apply px-4 mb-20 md:mb-[initial];
+
+    .text-group {
+      @apply flex items-center justify-between;
+
+      p {
+        @apply flex md:hidden text-[#D9D9D9E5]/90 text-xs hover:text-white cursor-pointer transition-all duration-300 ease-in-out;
+      }
+    }
+
+    h3 {
+      @apply mb-6;
+    }
+
+    .app__section-top-music-group {
+      @apply grid grid-cols-3 md:flex items-center justify-center gap-4 mb-6;
+
+      div {
+        @apply w-auto h-auto md:w-[146.38px] md:h-[205.01px] cursor-pointer;
+
+        img {
+          @apply w-full h-full md:hover:scale-105 transition-all duration-300 ease-in-out;
+        }
+      }
+    }
+
+    .app__section-bottom-music-group {
+      @apply grid grid-cols-3 md:flex items-center justify-center gap-4 mb-6;
+
+      div {
+        @apply w-auto h-auto md:w-[146.38px] md:h-[205.01px] cursor-pointer;
+
+        img {
+          @apply w-full h-full md:hover:scale-105 transition-all duration-300 ease-in-out;
+        }
+      }
+    }
+  }
 }

@@ -1,20 +1,21 @@
 import React from 'react';
 
-import { Navbar, Menu, Header, Section } from '../../exports/exports';
+import { Navbar, Menu, Header, Section, Footer } from '../../exports/exports';
 
 type Props = {};
 
 const HomePage = (props: Props) => {
   return (
-    <div className="app__homepage">
+    <div className="homepage">
       <Navbar />
-      <div className="app__menu">
+      <div className="menu">
         <Menu />
-        <div className="app__main-section">
+        <div className="main-section">
           <Header />
           <Section />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

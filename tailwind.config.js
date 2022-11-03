@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        vector: "url('./src/assets/vector.svg')",
+        vector: "url('./src/assets/Vector.svg')",
+      },
+      inset: {
+        alpha: 'calc(50% - 20rem)',
       },
       fontSize: {
         adapt: {

@@ -3,14 +3,14 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
-  .app__homepage {
-    @apply w-full;
+  .homepage {
+    @apply w-full h-full bg-black overflow-hidden;
 
-    .app__menu {
-      @apply flex flex-row items-start justify-between gap-[19.59px];
+    .menu {
+      @apply flex flex-row items-start justify-between gap-[19.59px] h-full;
 
-      .app__main-section {
-        @apply flex flex-col items-center justify-center;
+      .main-section {
+        @apply flex flex-col items-start md:items-center justify-center w-full md:max-w-[1581px] px-4 h-full;
       }
     }
   }

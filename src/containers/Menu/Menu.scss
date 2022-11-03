@@ -3,4 +3,79 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
+  .app__menu {
+    @apply pt-8 px-9 pb-20 min-w-[295px] h-full bg-[url('../../assets/Vector.svg')] bg-auto bg-center hidden md:block;
+
+    .app__menu-top {
+      @apply w-full border-b border-b-[#282828] pb-1 mb-4;
+
+      .app__menu-top-home {
+        @apply gap-[15.03px] p-1 flex items-center justify-start;
+
+        img {
+          @apply w-[17.97px] h-[21px];
+        }
+
+        p {
+          @apply w-full hover:text-[#FBBA12] hover:border-r-[3px] border-r-[#FBBA12] transition-all duration-100 ease-in-out cursor-pointer;
+        }
+      }
+
+      .app__menu-top-discover {
+        @apply gap-[15.03px] p-1 flex items-center justify-start;
+
+        img {
+          @apply w-[17px] h-[14px];
+        }
+
+        p {
+          @apply w-full hover:text-[#FBBA12] hover:border-r-[3px] border-r-[#FBBA12] transition-all duration-100 ease-in-out cursor-pointer;
+        }
+      }
+    }
+
+    .app__menu-middle {
+      @apply w-full border-b border-b-[#282828] pb-1 mb-4;
+
+      div {
+        @apply gap-[15.03px] p-1 flex items-center justify-start;
+
+        img {
+          @apply w-[17px] h-[17px];
+        }
+
+        p {
+          @apply w-full hover:text-[#FBBA12] hover:border-r-[3px] border-r-[#FBBA12] transition-all duration-100 ease-in-out cursor-pointer;
+        }
+      }
+
+      .app__menu-top-liked-songs {
+        @apply relative;
+
+        img {
+          @apply last:absolute right-14 cursor-pointer;
+        }
+      }
+
+      .app__menu-top-my-playlist {
+        @apply mt-2 relative;
+
+        p {
+          @apply w-full;
+        }
+
+        img {
+          @apply last:absolute right-4 cursor-pointer;
+        }
+      }
+    }
+
+    .app__menu-bottom {
+      @apply w-full pb-1 space-y-2;
+
+      p {
+        @apply w-full hover:text-[#FBBA12] hover:border-r-[3px] border-r-[#FBBA12] transition-all duration-100 ease-in-out cursor-pointer;
+      }
+    }
+  }
 }

@@ -10,6 +10,7 @@ export { default as Menu } from '../containers/Menu/Menu';
 export { default as Section } from '../containers/Section/Section';
 
 // exporting from layouts directory
+export { default as Footer } from '../layouts/Footer/Footer';
 export { default as Navbar } from '../layouts/Navbar/Navbar';
 
 // exporting from pages directory

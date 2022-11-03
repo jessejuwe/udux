@@ -32,7 +32,7 @@
   }
 
   .p-text {
-    @apply font-semibold text-base leading-[19px] large:text-xl text-[#D9D9D9];
+    @apply font-semibold text-sm leading-[19px] large:text-xl text-[#D9D9D9];
   }
 
   .light-text {
@@ -40,7 +40,7 @@
   }
 
   .bold-text {
-    @apply font-bold text-base md:text-xl md:leading-9;
+    @apply font-bold text-base md:text-2xl text-white;
   }
 
   .heading {

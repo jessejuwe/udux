@@ -1,0 +1,13 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .app__footer {
+    @apply h-20 flex flex-row items-center justify-around md:hidden fixed bottom-0 bg-black bg-[url('../../assets/Vector.svg')] bg-auto bg-center z-50 w-full;
+
+    img {
+      @apply cursor-pointer hover:animate-bounce;
+    }
+  }
+}

@@ -10,6 +10,7 @@
 @import './containers/Menu/Menu.scss';
 @import './containers/Section/Section.scss';
 
+@import './layouts/Footer/Footer.scss';
 @import './layouts/Navbar/Navbar.scss';
 
 @import './pages/HomePage/HomePage.scss';
